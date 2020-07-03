@@ -46,11 +46,12 @@ def QueryFilesNames(path: str) -> list:
     """
     return [obj for obj in listdir(path) if isfile(path + obj)]
 
-def CreateQuery(company: dict) -> str:
+def CreateQuery(company: dict, test: bool = True) -> str:
     """[Create a SQL QUERY based on the company data]
 
     Args:
         company (dict): [Dictionay with the data]
+        test (bool, optional): [Query first 10 lines]. Defaults to false.
 
     Returns:
         str: [SQL QUERY for ]
@@ -58,4 +59,5 @@ def CreateQuery(company: dict) -> str:
     Empresa = company["Empresa"]
     DataBase = company["DataBase"]
     Table = company["Table"]
-    return BaseSQLQuery.format(Empresa, DataBase, Table)
+    limit = "TOP 10" if test == True else ""
+    return BaseSQLQuery.format(limit,Empresa, DataBase, Table)

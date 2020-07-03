@@ -1,7 +1,7 @@
 BaseSQLQuery = """
-select TOP 10
+select {0}
  ROW_NUMBER() OVER (ORDER BY Fecha) as id,
- '{0}' AS Empresa,
+ '{1}' AS Empresa,
  YEAR(Fecha) AS Año,
  MONTH(Fecha) AS Mes,
  Fecha,
@@ -21,7 +21,7 @@ select TOP 10
  Crédito,
  SUM(Débito - Crédito) AS Valor,
  SUM((Débito - Crédito) * -1) AS Valor_Ingreso
- FROM [{1}].dbo.{2}
+ FROM [{2}].dbo.{3}
  GROUP BY 
  YEAR(Fecha), MONTH(Fecha), Fecha, Codigo_Cuenta, Nombre_Cuenta, Tercero,
  Codigo_Centro_Costos, Centro_de_costos, Nombre_Documento, Tipo_documento,

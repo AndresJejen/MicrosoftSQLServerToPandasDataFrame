@@ -5,7 +5,15 @@ from sqlalchemy import create_engine, text
 import pandas as pd
 import pandas.io.sql
 
-def runQuery(sql):
+def runQuery(sql: str):
+    """[Query all the data to the DataBase Server]
+
+    Args:
+        sql (str): [SQL String]
+
+    Returns:
+        [type]: [description]
+    """
     result = engine.connect().execute((text(sql)))
     return pd.DataFrame(result.fetchall(), columns=result.keys())
     #df= pandas.io.sql.read_sql(sql, conn)
