@@ -10,8 +10,7 @@ it can be useful for pipelines process and speed up your development process.
 ```
 from SQLServerToPandasDataFrame import CreateQuery, createConnection, runQuery
 
-Base_Query = "select {0} {1} from {2}.dbo.{3}"
-query1 = CreateQuery(empresa, Base_Query)
+Base_Query = "select * from [DataBase].dbo.Table"
     
 server = "HOST_DIRECTION"
 user = "USER_NAME"
