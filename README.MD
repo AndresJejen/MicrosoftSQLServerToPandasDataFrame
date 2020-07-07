@@ -8,7 +8,7 @@ it can be useful for pipelines process and speed up your development process.
 ## Usage
 
 ```
-from SQLServerToPandasDataFrame import CreateQuery, createConnection, runQuery
+from SQLServerToPandasDataFrame import createConnection, runQuery
 
 Base_Query = "select * from [DataBase].dbo.Table"
     

@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: SQLServerToPandasDataFrame-germanandresjejencortes
 Version: 0.0.1
 Summary: Query Data from a Private DataBase and save it in a Pandas DataFrame
-Home-page: https://github.com/pypa/sampleproject
+Home-page: https://github.com/AndresJejen/MicrosoftSQLServerToPandasDataFrame
 Author: Andres Jejen
 Author-email: gajcam@gmail.com
 License: UNKNOWN
@@ -18,8 +18,7 @@ Description: # MicrosoftSQLServerToPandasDataFrame
         ```
         from SQLServerToPandasDataFrame import CreateQuery, createConnection, runQuery
         
-        Base_Query = "select {0} {1} from {2}.dbo.{3}"
-        query1 = CreateQuery(empresa, Base_Query)
+        Base_Query = "select * from [DataBase].dbo.Table"
             
         server = "HOST_DIRECTION"
         user = "USER_NAME"

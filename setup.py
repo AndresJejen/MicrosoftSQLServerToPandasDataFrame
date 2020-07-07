@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="SQLServerToPandasDataFrame-germanandresjejencortes", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Andres Jejen",
     author_email="gajcam@gmail.com",
     description="Query Data from a Private DataBase and save it in a Pandas DataFrame",
@@ -19,4 +19,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    install_requires=[
+        'pyodbc',
+        'pandas'
+    ]
 )
