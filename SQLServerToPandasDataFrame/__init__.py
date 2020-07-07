@@ -4,7 +4,6 @@ from pyodbc import Connection
 import pyodbc
 import pandas.io.sql
 from pandas import DataFrame
-from .constants import BaseSQLQuery
 
 def CreateObjectEmpresa(empresa: str, DataBase: str, Table: str) -> None:
     """[Creates a new Company Object and add it to empresas object]
@@ -63,7 +62,7 @@ def CreateQuery(company: dict, BaseQuery: str, test: bool = True) -> str:
     DataBase = company["DataBase"]
     Table = company["Table"]
     limit = "TOP 10" if test == True else ""
-    return BaseSQLQuery.format(limit,Empresa, DataBase, Table)
+    return BaseQuery.format(limit,Empresa, DataBase, Table)
 
 def runQuery(sql: str, connection: Connection) -> DataFrame:
     """Query all the data to the DataBase Server
