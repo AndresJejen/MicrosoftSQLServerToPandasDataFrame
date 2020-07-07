@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="SQLServerToPandasDataFrame-YOUR-USERNAME-HERE", # Replace with your own username
+    name="SQLServerToPandasDataFrame-germanandresjejencortes", # Replace with your own username
     version="0.0.1",
     author="Andres Jejen",
     author_email="gajcam@gmail.com",

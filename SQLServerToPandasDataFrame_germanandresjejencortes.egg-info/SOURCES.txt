@@ -1,0 +1,6 @@
+setup.py
+SQLServerToPandasDataFrame/__init__.py
+SQLServerToPandasDataFrame_germanandresjejencortes.egg-info/PKG-INFO
+SQLServerToPandasDataFrame_germanandresjejencortes.egg-info/SOURCES.txt
+SQLServerToPandasDataFrame_germanandresjejencortes.egg-info/dependency_links.txt
+SQLServerToPandasDataFrame_germanandresjejencortes.egg-info/top_level.txt
