@@ -7,6 +7,14 @@ it can be useful for pipelines process and speed up your development process.
 
 ## Usage
 
+### install
+
+```
+pip install SQLServerToPandasDataFrame-germanandresjejencortes
+```
+
+### in your scripts
+
 ```
 from SQLServerToPandasDataFrame import createConnection, runQuery
 
