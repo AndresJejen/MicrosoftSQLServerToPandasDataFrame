@@ -28,4 +28,4 @@ def createConnection(databaseName: str, server: str,user: str, password: str, dr
     Returns:
         Connection: a connection object
     """
-    return pyodbc.connect("DRIVER={"+driver+"};SERVER="+server+";DATABASE="+databaseName+";UID="+user+";PWD="+password)
+    return pyodbc.connect("DRIVER={"+driver+"};SERVER="+server+";DATABASE="+databaseName+";UID="+user+";PWD="+password+";Trusted_Connection=True;")
